@@ -5,7 +5,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: v;
-  background: url("../img/bg-coffe.jpg") top center no-repeat;
+  background: url("../img/masjid.jpeg") top center no-repeat;
   background-size: cover;
   position: relative;
   background-position: center;
@@ -51,39 +51,6 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-.back-to-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 996;
-  background: var(--primary);
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  transition: all 0.4s;
-}
-
-.back-to-top i {
-  font-size: 28px;
-  color: #fff;
-  line-height: 0;
-}
-
-.back-to-top:hover {
-  background: var(--primary);
-  color: #fff;
-}
-
-.back-to-top.active {
-  visibility: visible;
-  opacity: 1;
-}
-
-/*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
@@ -98,11 +65,11 @@ h6 {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: #010101;
+  color: white;
 }
 
 #header h2 {
-  color: #010101;
+  color: white;
   margin-bottom: 40px;
   font-size: 22px;
 }
@@ -124,11 +91,13 @@ h6 {
   font-weight: 700;
   font-size: 44px;
   margin-bottom: 15px;
+  color: white;
 }
 
 #header .countdown div h4 {
   font-size: 16px;
   font-weight: 600;
+  color: white;
 }
 
 @media (max-width: 575px) {
@@ -149,87 +118,6 @@ h6 {
   }
 }
 
-#header .subscribe {
-  font-size: 15px;
-  text-align: center;
-}
-
-#header .subscribe h4 {
-  font-size: 20px;
-  font-weight: 600;
-  color: #010101;
-  position: relative;
-  padding-bottom: 12px;
-}
-
-#header .subscribe .subscribe-form {
-  min-width: 300px;
-  margin-top: 10px;
-  background: #fff;
-  padding: 6px 10px;
-  position: relative;
-  text-align: left;
-}
-
-#header .subscribe .subscribe-form input[type="email"] {
-  border: 0;
-  padding: 4px 8px;
-  width: calc(100% - 100px);
-}
-
-#header .subscribe .subscribe-form input[type="submit"] {
-  position: absolute;
-  top: 0;
-  right: -2px;
-  bottom: 0;
-  border: 0;
-  background: none;
-  font-size: 16px;
-  padding: 0 20px;
-  background: var(--primary);
-  color: #fff;
-  transition: 0.3s;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-#header .subscribe .subscribe-form input[type="submit"]:hover {
-  background: #5d4630;
-}
-
-#header .subscribe .error-message {
-  display: none;
-  color: var(--primary);
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-#header .subscribe .sent-message {
-  display: none;
-  color: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-#header .subscribe .loading {
-  display: none;
-  text-align: center;
-  padding: 15px;
-}
-
-#header .subscribe .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  animation: animate-loading-notify 1s linear infinite;
-}
-
 @keyframes animate-loading-notify {
   0% {
     transform: rotate(0deg);
@@ -244,17 +132,20 @@ h6 {
   margin-top: 10px;
 }
 
+#header .social-links h1 {
+  font-size: 35px;
+}
+
 #header .social-links a {
   font-size: 24px;
   display: inline-block;
   color: rgba(255, 255, 255, 0.8);
   line-height: 1;
-  padding-top: 14px;
   margin: 0 10px;
   text-align: center;
   transition: 0.3s;
 }
 
 #header .social-links a:hover {
-  color: #fff;
+  color: #aaa;
 }
